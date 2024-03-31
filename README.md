@@ -1,3 +1,6 @@
 Extreme lightweight dynamic audio recording waveform, not just a gif....
-![Uploading Screenshot 2024-03-31 at 23.59.14.png…]()
+
+
+
+<img width="908" alt="sss" src="https://github.com/tootzoe/RecAudWaveform/assets/7045471/0c1e73d9-8c97-490d-a5be-79763882868c">
 
