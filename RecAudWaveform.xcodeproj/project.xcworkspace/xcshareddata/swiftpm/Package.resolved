@@ -1,0 +1,15 @@
+{
+  "originHash" : "c132eb5e4abed8f913d5bb9aa26170b1b89d63ae202a33947232af6a7eefa619",
+  "pins" : [
+    {
+      "identity" : "taudiowaveform",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tootzoe/TAudioWaveform.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a860deeda324e1a8451f1a1f5b4d0a73632a5ef9"
+      }
+    }
+  ],
+  "version" : 3
+}

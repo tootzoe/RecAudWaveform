@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43B079812BB9C7EF006A99E4 /* TAudioWaveWid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B079802BB9C7EF006A99E4 /* TAudioWaveWid.swift */; };
+		43B079832BB9C810006A99E4 /* TAudioHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B079822BB9C810006A99E4 /* TAudioHandler.swift */; };
+		43B079852BB9CBAD006A99E4 /* TAudioListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B079842BB9CBAD006A99E4 /* TAudioListRow.swift */; };
+		43B079882BB9D189006A99E4 /* TAudioWaveform in Frameworks */ = {isa = PBXBuildFile; productRef = 43B079872BB9D189006A99E4 /* TAudioWaveform */; };
 		43B29A892BB9A325004495BF /* RecAudWaveformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B29A882BB9A325004495BF /* RecAudWaveformApp.swift */; };
 		43B29A8B2BB9A325004495BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B29A8A2BB9A325004495BF /* ContentView.swift */; };
 		43B29A8D2BB9A327004495BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B29A8C2BB9A327004495BF /* Assets.xcassets */; };
@@ -14,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43B079802BB9C7EF006A99E4 /* TAudioWaveWid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAudioWaveWid.swift; sourceTree = "<group>"; };
+		43B079822BB9C810006A99E4 /* TAudioHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAudioHandler.swift; sourceTree = "<group>"; };
+		43B079842BB9CBAD006A99E4 /* TAudioListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAudioListRow.swift; sourceTree = "<group>"; };
 		43B29A852BB9A325004495BF /* RecAudWaveform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecAudWaveform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B29A882BB9A325004495BF /* RecAudWaveformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecAudWaveformApp.swift; sourceTree = "<group>"; };
 		43B29A8A2BB9A325004495BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B079882BB9D189006A99E4 /* TAudioWaveform in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				43B29A882BB9A325004495BF /* RecAudWaveformApp.swift */,
+				43B079802BB9C7EF006A99E4 /* TAudioWaveWid.swift */,
+				43B079822BB9C810006A99E4 /* TAudioHandler.swift */,
+				43B079842BB9CBAD006A99E4 /* TAudioListRow.swift */,
 				43B29A8A2BB9A325004495BF /* ContentView.swift */,
 				43B29A8C2BB9A327004495BF /* Assets.xcassets */,
 				43B29A8E2BB9A327004495BF /* RecAudWaveform.entitlements */,
@@ -85,6 +96,9 @@
 			dependencies = (
 			);
 			name = RecAudWaveform;
+			packageProductDependencies = (
+				43B079872BB9D189006A99E4 /* TAudioWaveform */,
+			);
 			productName = RecAudWaveform;
 			productReference = 43B29A852BB9A325004495BF /* RecAudWaveform.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 43B29A7C2BB9A325004495BF;
+			packageReferences = (
+				43B079862BB9D189006A99E4 /* XCRemoteSwiftPackageReference "TAudioWaveform" */,
+			);
 			productRefGroup = 43B29A862BB9A325004495BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				43B29A8B2BB9A325004495BF /* ContentView.swift in Sources */,
+				43B079852BB9CBAD006A99E4 /* TAudioListRow.swift in Sources */,
 				43B29A892BB9A325004495BF /* RecAudWaveformApp.swift in Sources */,
+				43B079832BB9C810006A99E4 /* TAudioHandler.swift in Sources */,
+				43B079812BB9C7EF006A99E4 /* TAudioWaveWid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +294,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App wants to use micophone....";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -312,6 +333,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App wants to use micophone....";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -359,6 +381,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43B079862BB9D189006A99E4 /* XCRemoteSwiftPackageReference "TAudioWaveform" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tootzoe/TAudioWaveform.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43B079872BB9D189006A99E4 /* TAudioWaveform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43B079862BB9D189006A99E4 /* XCRemoteSwiftPackageReference "TAudioWaveform" */;
+			productName = TAudioWaveform;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43B29A7D2BB9A325004495BF /* Project object */;
 }

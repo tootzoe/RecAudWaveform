@@ -14,6 +14,13 @@
 import SwiftUI
 import AVFoundation
 
+
+import TAudioWaveform
+
+
+
+
+
 class TWaveformDat : ObservableObject {
   @Published    var wavformDat  =  [Double]()
 }
